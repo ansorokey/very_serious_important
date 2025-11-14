@@ -1,0 +1,20 @@
+html, body {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+#stick-gif, #btn2 {
+    visibility: hidden;
+}
+
+p {
+    max-width: 50%;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}

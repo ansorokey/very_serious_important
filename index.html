@@ -4,12 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>You just got jumanji'd</title>
+    <title>TOP SECRET</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <h1> Hello Morgan. This was too difficult to say over a text, so please look below.
+    </h1>
+    <p></p>
+    <button>Click Me</button>
+    <button id="btn2">click me again</button>
+    <br>
+    <img id='stick-gif' src="https://media1.tenor.com/m/UPTg0TOFi_QAAAAd/hornet-silksong.gif" alt="U getting stickbugged">
     <script>
+        document.querySelectorAll('button')[0].addEventListener('click', () => {
+            document.querySelectorAll('h1')[0].innerText = 'LOL U JUST GOT STICK BUGGED';
+            document.querySelector('#stick-gif').style.visibility = 'visible';
+            document.querySelector('#btn2').style.visibility = 'visible';
+            document.querySelectorAll('button')[0].style.visibility = 'hidden';
+        })
 
+        document.querySelector('#btn2').addEventListener('click', () => {
+            document.querySelector('#btn2').style.visibility = 'hidden';
+            document.querySelectorAll('h1')[0].innerText = 'All jokes aside';
+            document.querySelectorAll('p')[0].innerText = `
+Having had a night to catch up on sleep, eat food, wake up to a slow morning, stretch my aching back and body, and ensure me and my life's savongs were protected against identity theft and fraud, I have been able to get myself in a much better mindset than I was in yesterday. 
+
+I said many thngs, and I said them curtly and without any care for how it could affect you. I was rude, inconsiderate, and entirely lacking in any patience or empathy for what you must have been going through on your end. For that, and many other things, I apologize dearly.
+
+That said, you made a choice. And I never got to say how much I respect you for deciding on something for yourself and for your future. You did what you feel is best, and I'm proud of you for that.
+
+And with that said, I see you haven't undergone a scorched earth technique. You havent blocked me and removed me from everything. Which leads me to ask if you'd still like to remain friends? Disregarding all of yeserday's drama, you're still funny, and I still like playing games together and watchog movies over a call, talking about our interests, etc. Perhaps those are all things you'd prefer to reserve that time and attention for someone you want as more than a friend, and I totally understand that. I'd also totally understand if you think I may be an obstacle in your life preventing you from moving forward and finding the person you believe you deserve and deserves you. 
+
+At the end of the day, despite all our differences and how we may butt heads on certain things (hehe, butt heads) you're still a person with a pretty cool tattoo. And a damn good spider slayer who STILL NEEEEEEDS TO SEE THE SORCERY STAVES IN GROUNDED!!!!
+
+Maybe now isnt the best time to decide this. You're welcome to take all the time in the world you need to sort it all out, or flat out say "nah no way beat it bozo". I will accept any answer you may give, whenever you want to give it.
+
+If you bothered to read this far, I thank you for giving me your time. If you didn't, or skipped straight to the end, I blame tiktok brain rot.
+            
+            `;
+        })
     </script>
 </body>
 </html>
